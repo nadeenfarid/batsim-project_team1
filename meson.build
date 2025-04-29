@@ -16,36 +16,8 @@ deps = [
 
 common = ['src/batsim_edc.h']
 
-easy_fcfs_fcfs = shared_library('easy_fcfs_fcfs', common + ['src/easy_fcfs_fcfs.cpp'],
-  dependencies: deps,
-  install: true,
-)
 
-easy_lcfs_lcfs = shared_library('easy_lcfs_lcfs', common + ['src/easy_lcfs_lcfs.cpp'],
-  dependencies: deps,
-  install: true,
-)
-
-easy_lpf_lpf = shared_library('easy_lpf_lpf', common + ['src/easy_lpf_lpf.cpp'],
-  dependencies: deps,
-  install: true,
-)
-
-easy_lqf_lqf = shared_library('easy_lqf_lqf', common + ['src/easy_lqf_lqf.cpp'],
-  dependencies: deps,
-  install: true,
-)
-
-easy_spf_spf = shared_library('easy_spf_spf', common + ['src/easy_spf_spf.cpp'],
-  dependencies: deps,
-  install: true,
-)
-easy_sqf_sqf = shared_library('easy_sqf_sqf', common + ['src/easy_sqf_sqf.cpp'],
-  dependencies: deps,
-  install: true,
-)
-
-easy_exp_exp = shared_library('easy_exp_exp', common + ['src/easy_exp_exp.cpp'],
+easy_variants = shared_library('easy_variants', common + ['src/easy_variants.cpp'],
   dependencies: deps,
   install: true,
 )
