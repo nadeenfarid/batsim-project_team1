@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "https://simgrid.org/simgrid.dtd">
+<platform version="4.1">
+  <zone id="cluster" routing="Full">
+    <!-- Define 32 compute hosts -->
+    <host id="node_0"  speed="10Gf"/>
+    <host id="node_1"  speed="10Gf"/>
+    <host id="node_2"  speed="10Gf"/>
+    <host id="node_3"  speed="10Gf"/>
+    <host id="node_4"  speed="10Gf"/>
+    <host id="node_5"  speed="10Gf"/>
+    <host id="node_6"  speed="10Gf"/>
+    <host id="node_7"  speed="10Gf"/>
+    <host id="node_8"  speed="10Gf"/>
+    <host id="node_9"  speed="10Gf"/>
+    <host id="node_10" speed="10Gf"/>
+    <host id="node_11" speed="10Gf"/>
+    <host id="node_12" speed="10Gf"/>
+    <host id="node_13" speed="10Gf"/>
+    <host id="node_14" speed="10Gf"/>
+    <host id="node_15" speed="10Gf"/>
+    <host id="node_16" speed="10Gf"/>
+    <host id="node_17" speed="10Gf"/>
+    <host id="node_18" speed="10Gf"/>
+    <host id="node_19" speed="10Gf"/>
+    <host id="node_20" speed="10Gf"/>
+    <host id="node_21" speed="10Gf"/>
+    <host id="node_22" speed="10Gf"/>
+    <host id="node_23" speed="10Gf"/>
+    <host id="node_24" speed="10Gf"/>
+    <host id="node_25" speed="10Gf"/>
+    <host id="node_26" speed="10Gf"/>
+    <host id="node_27" speed="10Gf"/>
+    <host id="node_28" speed="10Gf"/>
+    <host id="node_29" speed="10Gf"/>
+    <host id="node_30" speed="10Gf"/>
+    <host id="node_31" speed="10Gf"/>
+    <!-- Keep the master host -->
+    <host id="master_host" speed="100Mf"/>
+  </zone>
+</platform>

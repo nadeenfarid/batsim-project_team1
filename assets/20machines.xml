@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE platform
+  SYSTEM 'https://simgrid.org/simgrid.dtd'>
+<platform version="4.1">
+    <zone id="multiple_machines" routing="Full">
+        <host id="node_0" speed="6.43Gf"/>
+        <host id="node_1" speed="9.97Gf"/>
+        <host id="node_2" speed="22.28Gf"/>
+        <host id="node_3" speed="10.81Gf"/>
+        <host id="node_4" speed="7.27Gf"/>
+        <host id="node_5" speed="22.09Gf"/>
+        <host id="node_6" speed="15.02Gf"/>
+        <host id="node_7" speed="15.39Gf"/>
+        <host id="node_8" speed="5.23Gf"/>
+        <host id="node_9" speed="18.02Gf"/>
+        <host id="node_10" speed="14.94Gf"/>
+        <host id="node_11" speed="24.36Gf"/>
+        <host id="node_12" speed="15.42Gf"/>
+        <host id="node_13" speed="16.56Gf"/>
+        <host id="node_14" speed="22.62Gf"/>
+        <host id="node_15" speed="7.56Gf"/>
+        <host id="node_16" speed="5.77Gf"/>
+        <host id="node_17" speed="9.89Gf"/>
+        <host id="node_18" speed="19.60Gf"/>
+        <host id="node_19" speed="6.12Gf"/>
+        <host id="master_host" speed="100Mf"/>
+    </zone>
+</platform>

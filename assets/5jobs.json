@@ -1,0 +1,18 @@
+{
+    "description": "5 jobs test",
+    "nb_res": 3,
+    "jobs": [
+      {"id": "1", "profile": "4UT", "res": 1, "walltime": 5, "subtime": 0},
+      {"id": "2", "profile": "4UT", "res": 2, "walltime": 7, "subtime": 0},
+      {"id": "3", "profile": "3UT", "res": 1, "walltime": 3, "subtime": 2},
+      {"id": "4", "profile": "6UT", "res": 3, "walltime": 14, "subtime": 1},
+      {"id": "5", "profile": "2UT", "res": 2, "walltime": 15, "subtime": 4}
+    ],
+    "profiles": {
+      "2UT": {"delay": 2, "type": "delay"},
+      "3UT": {"delay": 3, "type": "delay"},
+      "4UT": {"delay": 4, "type": "delay"},
+      "5UT": {"delay": 5, "type": "delay"},
+      "6UT": {"delay": 6, "type": "delay"}
+    }
+  }
