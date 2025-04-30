@@ -36,3 +36,29 @@ Each algorithm is a variation of EASY-Backfilling with a different job reorderin
 ```bash
 meson setup build
 ninja -C build
+```
+
+## ▶️ How to Execute
+
+```bash
+python run_easy_variants.py -p assets/20machines.xml -w assets/500jobs.json --build-dir build
+```
+
+This command **runs all EASY-based scheduling algorithms** defined in the project on a specific simulation setup using Batsim.
+
+- `-p assets/20machines.xml`: specifies the platform file with 20 machines.
+- `-w assets/500jobs.json`: provides the base workload containing 500 jobs.
+- `--build-dir build`: tells the script where to find the compiled scheduling plugin (`libeasy_variants.so`).
+
+The script does the following:
+1. Runs each scheduling algorithm **10 times** on auto-generated variations of the workload.
+2. Runs each algorithm with **two threshold settings**:
+   - No threshold (unrestricted backfilling),
+   - A 1-hour threshold (restricts job reordering based on wait time).
+3. Collects **mean and max waiting times** for each run and saves them in `results.py`.
+4. Saves a **timeline plot** of job executions for run #10 of each configuration.
+5. Generates **two summary bar charts** in the `out/` directory:
+   - `mean_waiting_comparison.png`
+   - `max_waiting_comparison.png`
+
+Results are reproducible, self-contained, and give clear visual feedback on the impact of different queue ordering policies and thresholds.
